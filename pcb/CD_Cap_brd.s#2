@@ -7145,6 +7145,8 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="U$2" library="Ians parts" deviceset="BIG_PINHEADX1" device=""/>
 <part name="U$3" library="Ians parts" deviceset="BIG_PINHEADX1" device=""/>
 <part name="U$4" library="Ians parts" deviceset="BIG_PINHEADX1" device=""/>
+<part name="J3" library="SparkFun-Connectors" deviceset="M03" device="LOCK"/>
+<part name="J4" library="SparkFun-Connectors" deviceset="M03" device="LOCK"/>
 </parts>
 <sheets>
 <sheet>
@@ -7180,6 +7182,8 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="U$2" gate="G$1" x="20.32" y="58.42" rot="R90"/>
 <instance part="U$3" gate="G$1" x="38.1" y="58.42" rot="R90"/>
 <instance part="U$4" gate="G$1" x="45.72" y="58.42" rot="R90"/>
+<instance part="J3" gate="J$1" x="35.56" y="114.3"/>
+<instance part="J4" gate="J$1" x="55.88" y="111.76"/>
 </instances>
 <busses>
 </busses>
