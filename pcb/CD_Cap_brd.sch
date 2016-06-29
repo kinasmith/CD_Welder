@@ -6870,10 +6870,10 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </deviceset>
 </devicesets>
 </library>
-<library name="Ians parts">
+<library name="_my-parts">
 <packages>
 <package name="M6_PINHEAD">
-<pad name="P$1" x="0" y="0" drill="6" diameter="12" thermals="no"/>
+<pad name="P$1" x="0" y="0" drill="5.08" diameter="11.43" thermals="no"/>
 </package>
 <package name="M3_PINHEAD">
 <pad name="P$1" x="0" y="0" drill="3" diameter="6" thermals="no"/>
@@ -6901,7 +6901,7 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <gate name="G$1" symbol="BIG_PINHEADX1" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="M6_PINHEAD">
+<device name="10-32" package="M6_PINHEAD">
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 </connects>
@@ -6959,10 +6959,10 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="C8" library="resistor" deviceset="CPOL-EU" device="E10-35"/>
 <part name="J1" library="SparkFun-Connectors" deviceset="M03" device="PTH"/>
 <part name="J2" library="SparkFun-Connectors" deviceset="M03" device="PTH"/>
-<part name="U$1" library="Ians parts" deviceset="BIG_PINHEADX1" device=""/>
-<part name="U$2" library="Ians parts" deviceset="BIG_PINHEADX1" device=""/>
-<part name="U$3" library="Ians parts" deviceset="BIG_PINHEADX1" device=""/>
-<part name="U$4" library="Ians parts" deviceset="BIG_PINHEADX1" device=""/>
+<part name="U$1" library="_my-parts" deviceset="BIG_PINHEADX1" device="10-32"/>
+<part name="U$2" library="_my-parts" deviceset="BIG_PINHEADX1" device="10-32"/>
+<part name="U$3" library="_my-parts" deviceset="BIG_PINHEADX1" device="10-32"/>
+<part name="U$4" library="_my-parts" deviceset="BIG_PINHEADX1" device="10-32"/>
 <part name="J3" library="SparkFun-Connectors" deviceset="M03" device="LOCK"/>
 <part name="J4" library="SparkFun-Connectors" deviceset="M03" device="LOCK"/>
 </parts>
