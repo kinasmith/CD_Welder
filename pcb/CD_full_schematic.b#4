@@ -437,6 +437,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="7.62" y1="25.4" x2="-7.62" y2="25.4" width="0.127" layer="21"/>
 <hole x="0" y="17.78" drill="3.81"/>
 </package>
+<package name="RESISTOR_1INCH_5W">
+<pad name="1" x="-12.7" y="0" drill="0.9" shape="octagon"/>
+<pad name="2" x="12.7" y="0" drill="0.9" shape="octagon"/>
+<wire x1="-11.43" y1="-3.81" x2="11.43" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="11.43" y1="-3.81" x2="11.43" y2="3.81" width="0.127" layer="21"/>
+<wire x1="11.43" y1="3.81" x2="-11.43" y2="3.81" width="0.127" layer="21"/>
+<wire x1="-11.43" y1="3.81" x2="-11.43" y2="-3.81" width="0.127" layer="21"/>
+</package>
 </packages>
 </library>
 </libraries>
@@ -737,6 +745,7 @@ design rules under a new name.</description>
 <element name="U$4" library="_my-parts" package="TO-247" value="STTH6002CW" x="-82.55" y="-695.96"/>
 <element name="U$5" library="_my-parts" package="TO-247" value="STTH6002CW" x="-99.06" y="-695.96"/>
 <element name="U$6" library="_my-parts" package="TO-247" value="STTH6002CW" x="-115.57" y="-695.96"/>
+<element name="U$7" library="_my-parts" package="RESISTOR_1INCH_5W" value="RESISTOR_5W_1INCH" x="-109.22" y="-702.31"/>
 </elements>
 <signals>
 <signal name="ENC_11">
@@ -1088,6 +1097,7 @@ design rules under a new name.</description>
 <contactref element="U$5" pad="3"/>
 <contactref element="U$5" pad="1"/>
 <contactref element="U$6" pad="3"/>
+<contactref element="U$7" pad="1"/>
 <wire x1="72.39" y1="-542.29" x2="35.56" y2="-542.29" width="0" layer="19" extent="1-1"/>
 <wire x1="35.56" y1="-579.12" x2="35.56" y2="-542.29" width="0" layer="19" extent="1-1"/>
 <wire x1="-1.27" y1="-579.12" x2="35.56" y2="-579.12" width="0" layer="19" extent="1-1"/>
@@ -1119,6 +1129,7 @@ design rules under a new name.</description>
 <wire x1="-99.06" y1="-695.96" x2="-93.98" y2="-695.96" width="0" layer="19" extent="1-1"/>
 <wire x1="-110.49" y1="-695.96" x2="-99.06" y2="-695.96" width="0" layer="19" extent="1-1"/>
 <wire x1="-115.57" y1="-695.96" x2="-110.49" y2="-695.96" width="0" layer="19" extent="1-1"/>
+<wire x1="-121.92" y1="-702.31" x2="-115.57" y2="-695.96" width="0" layer="19" extent="1-1"/>
 <wire x1="72.39" y1="-652.78" x2="73.66" y2="-674.37" width="0" layer="19" extent="1-1"/>
 <wire x1="91.44" y1="-641.35" x2="72.39" y2="-652.78" width="0" layer="19" extent="1-1"/>
 <wire x1="104.14" y1="-641.35" x2="91.44" y2="-641.35" width="0" layer="19" extent="1-1"/>
@@ -1203,6 +1214,7 @@ design rules under a new name.</description>
 <contactref element="U$4" pad="2"/>
 <contactref element="U$3" pad="2"/>
 <contactref element="U$2" pad="2"/>
+<contactref element="U$7" pad="2"/>
 <wire x1="-11.43" y1="-195.58" x2="-11.43" y2="-232.41" width="0" layer="19" extent="1-1"/>
 <wire x1="-17.78" y1="-175.26" x2="-11.43" y2="-195.58" width="0" layer="19" extent="1-1"/>
 <wire x1="-17.78" y1="-170.18" x2="-17.78" y2="-175.26" width="0" layer="19" extent="1-1"/>
@@ -1246,7 +1258,8 @@ design rules under a new name.</description>
 <wire x1="-54.61" y1="-695.96" x2="-38.1" y2="-695.96" width="0" layer="19" extent="1-1"/>
 <wire x1="-71.12" y1="-695.96" x2="-54.61" y2="-695.96" width="0" layer="19" extent="1-1"/>
 <wire x1="-87.63" y1="-695.96" x2="-71.12" y2="-695.96" width="0" layer="19" extent="1-1"/>
-<wire x1="-104.14" y1="-695.96" x2="-87.63" y2="-695.96" width="0" layer="19" extent="1-1"/>
+<wire x1="-96.52" y1="-702.31" x2="-87.63" y2="-695.96" width="0" layer="19" extent="1-1"/>
+<wire x1="-104.14" y1="-695.96" x2="-96.52" y2="-702.31" width="0" layer="19" extent="1-1"/>
 <wire x1="-120.65" y1="-695.96" x2="-104.14" y2="-695.96" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">

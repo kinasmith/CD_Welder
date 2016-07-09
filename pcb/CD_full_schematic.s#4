@@ -7312,6 +7312,14 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="7.62" y1="25.4" x2="-7.62" y2="25.4" width="0.127" layer="21"/>
 <hole x="0" y="17.78" drill="3.81"/>
 </package>
+<package name="RESISTOR_1INCH_5W">
+<pad name="1" x="-12.7" y="0" drill="0.9" shape="octagon"/>
+<pad name="2" x="12.7" y="0" drill="0.9" shape="octagon"/>
+<wire x1="-11.43" y1="-3.81" x2="11.43" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="11.43" y1="-3.81" x2="11.43" y2="3.81" width="0.127" layer="21"/>
+<wire x1="11.43" y1="3.81" x2="-11.43" y2="3.81" width="0.127" layer="21"/>
+<wire x1="-11.43" y1="3.81" x2="-11.43" y2="-3.81" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="DIODE-ARRAY_COM-CATHODE">
@@ -7338,6 +7346,21 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="2.54" y1="-3.81" x2="0" y2="-3.81" width="0.254" layer="94"/>
 <wire x1="2.54" y1="1.27" x2="2.54" y2="5.08" width="0.254" layer="94"/>
 </symbol>
+<symbol name="RESISTOR">
+<wire x1="-5.08" y1="0" x2="-3.81" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="1.27" y2="2.54" width="0.254" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="3.81" y2="2.54" width="0.254" layer="94"/>
+<wire x1="3.81" y1="2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="6.35" y2="0" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="6.35" y1="0" x2="10.16" y2="0" width="0.254" layer="94"/>
+<pin name="S" x="-7.62" y="0" length="point"/>
+<pin name="T" x="10.16" y="0" length="point"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="STTH6002CW">
@@ -7350,6 +7373,22 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <connect gate="G$1" pin="S" pad="1"/>
 <connect gate="G$1" pin="T" pad="3"/>
 <connect gate="G$1" pin="U" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RESISTOR_5W_1INCH">
+<gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RESISTOR_1INCH_5W">
+<connects>
+<connect gate="G$1" pin="S" pad="1"/>
+<connect gate="G$1" pin="T" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -7474,6 +7513,7 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="U$4" library="_my-parts" deviceset="STTH6002CW" device=""/>
 <part name="U$5" library="_my-parts" deviceset="STTH6002CW" device=""/>
 <part name="U$6" library="_my-parts" deviceset="STTH6002CW" device=""/>
+<part name="U$7" library="_my-parts" deviceset="RESISTOR_5W_1INCH" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7893,6 +7933,7 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="U$4" gate="G$1" x="223.52" y="40.64" rot="R180"/>
 <instance part="U$5" gate="G$1" x="233.68" y="40.64" rot="R180"/>
 <instance part="U$6" gate="G$1" x="243.84" y="40.64" rot="R180"/>
+<instance part="U$7" gate="G$1" x="180.34" y="40.64" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -8494,6 +8535,10 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="241.3" y1="33.02" x2="241.3" y2="30.48" width="0.1524" layer="91"/>
 <junction x="241.3" y="30.48"/>
 <label x="190.5" y="27.94" size="1.778" layer="95"/>
+<pinref part="U$7" gate="G$1" pin="S"/>
+<wire x1="180.34" y1="33.02" x2="180.34" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="30.48" x2="190.5" y2="30.48" width="0.1524" layer="91"/>
+<junction x="190.5" y="30.48"/>
 </segment>
 </net>
 <net name="TRIG" class="0">
@@ -8847,6 +8892,12 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="203.2" y1="48.26" x2="203.2" y2="50.8" width="0.1524" layer="91"/>
 <junction x="203.2" y="50.8"/>
 <label x="193.04" y="50.8" size="1.778" layer="95"/>
+<pinref part="U$7" gate="G$1" pin="T"/>
+<wire x1="180.34" y1="50.8" x2="180.34" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="53.34" x2="187.96" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="53.34" x2="187.96" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="50.8" x2="193.04" y2="50.8" width="0.1524" layer="91"/>
+<junction x="193.04" y="50.8"/>
 </segment>
 </net>
 <net name="N$1" class="0">
