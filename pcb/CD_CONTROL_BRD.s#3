@@ -3439,6 +3439,7 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="J2" library="SparkFun-Connectors" deviceset="M02" device="LOCK"/>
 <part name="R3" library="passives-7351" deviceset="RESISTOR" device="0603-N" value="1k"/>
 <part name="R4" library="passives-7351" deviceset="RESISTOR" device="0603-N" value="1k"/>
+<part name="J3" library="SparkFun-Connectors" deviceset="M02" device="LOCK"/>
 </parts>
 <sheets>
 <sheet>
@@ -3466,6 +3467,7 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="J2" gate="G$1" x="58.42" y="152.4"/>
 <instance part="R3" gate="G$1" x="106.68" y="106.68" rot="R90"/>
 <instance part="R4" gate="G$1" x="106.68" y="91.44" rot="R90"/>
+<instance part="J3" gate="G$1" x="58.42" y="139.7"/>
 </instances>
 <busses>
 </busses>
@@ -3487,6 +3489,11 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="ARDUINO" gate="G$1" pin="8"/>
 <wire x1="40.64" y1="27.94" x2="35.56" y2="27.94" width="0.1524" layer="91"/>
 <label x="35.56" y="27.94" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J3" gate="G$1" pin="2"/>
+<wire x1="66.04" y1="142.24" x2="68.58" y2="142.24" width="0.1524" layer="91"/>
+<label x="68.58" y="142.24" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="9V" class="0">
@@ -3613,6 +3620,11 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="R4" gate="G$1" pin="P$1"/>
 <wire x1="106.68" y1="86.36" x2="106.68" y2="83.82" width="0.1524" layer="91"/>
 <label x="106.68" y="83.82" size="1.27" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J3" gate="G$1" pin="1"/>
+<wire x1="66.04" y1="139.7" x2="68.58" y2="139.7" width="0.1524" layer="91"/>
+<label x="68.58" y="139.7" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="5V" class="0">

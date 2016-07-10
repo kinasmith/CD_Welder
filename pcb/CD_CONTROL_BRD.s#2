@@ -3437,8 +3437,8 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="S1" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="12MM"/>
 <part name="J1" library="SparkFun-Connectors" deviceset="M03" device="LOCK_NO_SILK"/>
 <part name="J2" library="SparkFun-Connectors" deviceset="M02" device="LOCK"/>
-<part name="R3" library="passives-7351" deviceset="RESISTOR" device="0603-N" value="1k"/>
-<part name="R4" library="passives-7351" deviceset="RESISTOR" device="0603-N" value="1k"/>
+<part name="R3" library="passives-7351" deviceset="RESISTOR" device="0603-N" value="12k"/>
+<part name="R4" library="passives-7351" deviceset="RESISTOR" device="0603-N" value="3.3k"/>
 <part name="J3" library="SparkFun-Connectors" deviceset="M02" device="LOCK"/>
 </parts>
 <sheets>
