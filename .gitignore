@@ -26,6 +26,6 @@ Temporary Items
 .apdisk
 
 # Eagle Temp Files
-.b#*
-.s#*
-.nc
+*.b#*
+*.s#*
+*.nc
